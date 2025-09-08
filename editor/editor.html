@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editor.css">
+    <script src="jszip.min.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Editor de datos</h1>
+        <button id="download">Download changes</button>
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="add-course">Add Course</button>
+                <button class="tab-button" data-tab="remove-course">Remove Course</button>
+                <button class="tab-button" data-tab="update-course" id="update-course-button">Update Course</button>
+            </div>
+            <div class="tab-content-container">
+                <div id="add-course" class="tab-content active">
+                    <h3>Add Course</h3>
+                    <div class="controls">
+                        <label for="md-input" class="mdfile-label">Include Markdown Files</label>
+                        <input type="checkbox" class="md-input" name="md-input" id="md-input">
+
+                        <label for="img-input" class="imgfiles-label">Include Image Files</label>
+                        <input type="checkbox" class="img-input" name="img-input" id="img-input">
+                    </div>
+                    <form id="course-form">
+                        <h4>Course Information</h4>
+                        <label for="course-id">
+                            Course ID:
+                        </label>
+                        <input type="text" id="course-id" name="course-id" required>
+
+                        <label for="course-title">Course Title:</label>
+                        <input type="text" id="course-title" name="course-title" required>
+
+                        <label for="course-short-description">Course Short Description:</label>
+                        <textarea id="course-short-description" name="course-short-description" required></textarea>
+
+                        <label for="course-long-description">Course Long Description:</label>
+                        <textarea id="course-long-description" name="course-long-description" required></textarea>
+
+                        <label for="course-author">Author:</label>
+                        <input type="text" id="course-author" name="course-author" required>
+
+                        <label for="course-level">Course Level:</label>
+                        <select id="course-level" name="course-level" required>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+
+                        <label for="number-classes">Number of Classes:</label>
+                        <input type="number" id="number-classes" name="number-classes" required>
+
+                        <label for="course-duration">Duration:</label>
+                        <input type="text" id="course-duration" name="course-duration" required>
+                    </form>
+
+                    <div class="course-lessons">
+                        <h4>Course Lessons</h4>
+                        <div class="lesson">
+                            <label for="lesson-id">Lesson ID:</label>
+                            <input type="text" id="lesson-id" name="lesson-id" required>
+
+                            <label for="lesson-position">Lesson Position:</label>
+                            <input type="number" id="lesson-position" name="lesson-position" required>
+
+                            <label for="lesson-title">Lesson Title:</label>
+                            <input type="text" id="lesson-title" name="lesson-title" required>
+
+                            <label for="lesson-type">Lesson Type:</label>
+                            <select id="lesson-type" name="lesson-type" required>
+                                <option value="Document">Document</option>
+                                <option value="Video">Video</option>
+                            </select>
+
+                            <label for="lesson-duration">Lesson Duration (in minutes):</label>
+                            <input type="text" id="lesson-duration" name="lesson-duration" required>
+                        </div>
+                        <label for="lesson-file" id="lesson-file-label">Lesson File:</label>
+                        <input type="text" name="lesson-file" id="lesson-file" required>
+
+                        <button id="add-lesson-button">Add Another Lesson</button>
+                    </div>
+
+                    <div class="lessons-view" id="lessons-view">
+                        <h4>Lesson Preview</h4>
+                        <div id="lesson-preview"></div>
+                    </div>
+
+                    <button id="add-course-button">Submit Course</button>
+                    </form>
+
+                </div>
+                <div id="remove-course" class="tab-content">
+                    <h3>Remove Course</h3>
+                    <div class="course-list">
+                        <p>Select a course to remove:</p>
+                        <ul id="courses-to-remove">
+                            <li>Course 1 <button class="remove-button">Remove</button></li>
+                            <li>Course 2 <button class="remove-button">Remove</button></li>
+                            <li>Course 3 <button class="remove-button">Remove</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="update-course" class="tab-content">
+                    <h3>Update Course</h3>
+                    <div class="course-list">
+                        <p>Select a course to update:</p>
+                        <ul id="courses-to-update">
+                            <li>Course 1 <button class="update-button">Update</button></li>
+                            <li>Course 2 <button class="update-button">Update</button></li>
+                            <li>Course 3 <button class="update-button">Update</button></li>
+                        </ul>
+                    </div>
+                    <div class="update-form" id="update-form">
+                        <h4>Update Course</h4>
+                        <form id="update-course-form">
+                            <h4>Course Information</h4>
+
+                            <label for="update-course-title">Course Title:</label>
+                            <input type="text" id="update-course-title" name="update-course-title" required>
+
+                            <label for="update-course-short-description">Course Short Description:</label>
+                            <textarea id="update-course-short-description" name="update-course-short-description"
+                                required></textarea>
+
+                            <label for="update-course-long-description">Course Long Description:</label>
+                            <textarea id="update-course-long-description" name="update-course-long-description"
+                                required></textarea>
+
+                            <label for="update-course-author">Author:</label>
+                            <input type="text" id="update-course-author" name="update-course-author" required>
+
+                            <label for="update-course-level">Course Level:</label>
+                            <select id="update-course-level" name="update-course-level" required>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+
+                            <label for="update-number-classes">Number of Classes:</label>
+                            <input type="number" id="update-number-classes" name="update-number-classes" required>
+
+                            <label for="update-course-duration">Duration:</label>
+                            <input type="text" id="update-course-duration" name="update-course-duration" required>
+                        </form>
+                        <div class="update-course-lessons">
+                            <h4>Course Lessons</h4>
+                            <div class="lesson">
+                                <label for="update-lesson-id">Lesson ID:</label>
+                                <input type="text" id="update-lesson-id" name="update-lesson-id" required>
+
+                                <label for="update-lesson-title">Lesson Title:</label>
+                                <input type="text" id="update-lesson-title" name="update-lesson-title" required>
+
+                                <label for="update-lesson-type">Lesson Type:</label>
+                                <select id="update-lesson-type" name="update-lesson-type" required>
+                                    <option value="Document">Document</option>
+                                    <option value="Video">Video</option>
+                                </select>
+
+                                <label for="update-lesson-duration">Lesson Duration (in minutes):</label>
+                                <input type="text" id="update-lesson-duration" name="update-lesson-duration" required>
+                            </div>
+                            <label for="update-lesson-file" id="update-lesson-file-label">Lesson File:</label>
+                            <input type="text" name="update-lesson-file" id="update-lesson-file" required>
+
+                            <button id="update-add-lesson-button">Add Another Lesson</button>
+                        </div>
+
+                        <div class="update-lessons-view" id="update-lessons-view">
+                            <h4>Lesson Preview</h4>
+                            <div id="update-lesson-preview"></div>
+                        </div>
+
+                        <button id="update-add-course-button">Submit Course</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="editor.js"></script>
+</body>
+
+</html>

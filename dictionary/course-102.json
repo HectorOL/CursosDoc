@@ -1,0 +1,33 @@
+{
+    "course_id": "course-102",
+    "title": "Course 102",
+    "autor": "Jane Doe",
+    "description": "This course provides an introduction to programming concepts and techniques using Python. It covers fundamental topics such as variables, data types, control structures, functions, and basic data structures.",
+    "level": "Beginner",
+    "number_of_lessons": 12,
+    "duration": "80 hours",
+    "lessons": [
+        {
+            "lesson_id": "lesson-1",
+            "type": "document",
+            "title": "Getting Started with Python",
+            "duration": "1 hour",
+            "file_url": "course-101/lesson-1"
+        }
+        ,
+        {
+            "lesson_id": "lesson-2",
+            "type": "video",
+            "title": "Variables and Data Types",
+            "duration": "1.5 hours",
+            "video_url": "https://example.com/videos/lesson-2"
+        },
+        {
+            "lesson_id": "lesson-3",
+            "type": "document",
+            "title": "Control Structures",
+            "duration": "1 hour",
+            "file_url": "course-101/lesson-3"
+        }
+    ]
+}

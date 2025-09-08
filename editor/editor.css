@@ -1,0 +1,10 @@
+.tab-content {
+  display: none; /* Oculta todos los contenidos por defecto */
+}
+.tab-content.active {
+  display: block; /* Muestra solo el contenido activo */
+}
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+}
