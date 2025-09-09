@@ -1,0 +1,87 @@
+/* ===== Variables ===== */
+:root {
+  --font-sans: "Poppins", sans-serif;
+
+  /* Colores principales */
+  --background: #ffffff;   /* Fondo */
+  --text: #3B3B3B;   /* Texto */
+  --primary-color: #3F81E5;       /* Color primario */
+  --secondary-color: #1e40af; /* Hover */
+  --border: #d1d5db;       /* Bordes */
+  --secondary-text: #424242;        /* Texto secundario */
+
+  /* Estilo de letras */
+
+  --font-header-size: .9rem;   
+  --font-header-weight: 600;
+
+  --font-title-size:2.5rem;     
+  --font-title-weight: 600;
+
+  --font-subtitle-size: 1.5rem; 
+  --font-subtitle-weight: 600;
+
+  --font-abstract-size: 1.2rem;
+  --font-abstract-weight: 200;
+
+  --font-text-size: 1.1rem;      
+  --font-text-weight: 200;
+}
+
+
+.dark {
+  --background: #111827;
+  --foreground: #f9fafb;
+  --accent: #3b82f6;
+  --accent-hover: #1e40af;
+  --border: #374151;
+  --muted: #9ca3af;
+}
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--background);
+}
+
+.info-title{
+    color: var(--primary-color);
+    font-size: var(--font-title-size);
+    font-weight: var(--font-title-weight);
+
+}
+.info-description{
+    color: var(--secondary-text);
+    font-size: var(--font-subtitle-size);
+    font-weight: var(--font-subtitle-weight);
+    margin-top: 10px;
+}
+
+li{
+    list-style: none;
+    margin-top: 10px;
+    font-size: var(--font-header-size);
+    font-weight: var(--font-header-weight);}
+
+/* ===== Navbar ===== */
+header {
+
+}
+
+
+/* ===== Main Layout ===== */
+main {
+  
+}
+
+.buttons {
+
+}
+
+
