@@ -3,35 +3,45 @@
   --font-sans: "Poppins", sans-serif;
 
   /* Colores principales */
-  --background: #ffffff;
+
   /* Fondo */
-  --text: #3B3B3B;
+  --background: #ffffff;
+
   /* Texto */
-  --primary-color: #3F81E5;
+  --text: #3B3B3B;
+
   /* Color primario */
-  --secondary-color: #1e40af;
-  /* Hover */
-  --border: #d1d5db;
+  --primary-color: #3F81E5;
+
+  /* Color secundario */
+  --secondary-color: hsl(from var(--primary-color) h s calc(l - 20%));
+
   /* Bordes */
-  --secondary-text: #424242;
+  --border: #d1d5db;
+
   /* Texto secundario */
+  --secondary-text: #424242;
 
-  /* Estilo de letras */
+  
 
-  --font-header-size: .9rem;
+  --font-header-size: clamp(0.8rem, 2vw, 1rem);
   --font-header-weight: 600;
 
-  --font-title-size: 2.5rem;
-  --font-title-weight: 600;
+  --font-title-size: clamp(2rem, 5vw, 3rem);
+  --font-title-weight: 500;
+  --font-title-variation: 'wght' 550;
 
-  --font-subtitle-size: 1.5rem;
+  --font-subtitle-size: clamp(1.2rem, 3vw, 1.8rem);
   --font-subtitle-weight: 600;
 
-  --font-abstract-size: 1.2rem;
+  --font-abstract-size: clamp(1rem, 2.5vw, 1.4rem);
   --font-abstract-weight: 200;
 
-  --font-text-size: 1.1rem;
+  --font-text-size: clamp(0.9rem, 2vw, 1.2rem);
   --font-text-weight: 200;
+
+  --font-button-size: clamp(0.9rem, 2vw, 1.2rem);
+  --font-button-weight: 100;
 }
 
 
@@ -79,16 +89,16 @@ body {
 }
 
 .info-title {
-  color: var(--primary-color);
+  color: var(--text-color);
   font-size: var(--font-title-size);
   font-weight: var(--font-title-weight);
-
+  font-variation-settings: var(--font-title-variation);
 }
 
 .info-description {
   color: var(--secondary-text);
-  font-size: var(--font-subtitle-size);
-  font-weight: var(--font-subtitle-weight);
+  font-size: var(--font-text-size);
+  font-weight: var(--font-text-weight);
   margin-top: 10px;
 }
 
