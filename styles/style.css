@@ -29,7 +29,6 @@
 
   --font-title-size: clamp(2rem, 5vw, 3rem);
   --font-title-weight: 500;
-  --font-title-variation: 'wght' 550;
 
   --font-subtitle-size: clamp(1.2rem, 3vw, 1.8rem);
   --font-subtitle-weight: 600;
