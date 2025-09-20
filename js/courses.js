@@ -15,7 +15,7 @@ getCourses().then(courses => {
             <img src="${course.image}" alt="${course.title}">
             <div class="course-level">
                 <span class="level">${course.level}</span>
-                <span class="number-classes">${course.classes} classes</span>
+                <span class="number-classes">${course.number_of_lessons} classes</span>
             </div>
             <h2>${course.title}</h2>
             <p>${course.description}</p>

@@ -1,0 +1,151 @@
+main{
+    flex-direction: column;
+}
+
+.trajectory-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.education {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.education-title {
+    margin-bottom: 10px;
+
+}
+
+.education-description {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.education-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education-level {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.education-image {
+    width: 100%;
+    height: 125px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.level-title {
+    margin-bottom: 10px;
+}
+
+.level-description {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.level-list {
+    margin-bottom: 15px;
+}
+
+.level-list li {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.education hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.available-projects {
+    margin-bottom: 15px;
+}
+
+.education-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.languajes {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.languajes-title {
+    margin-bottom: 10px;
+}
+
+.languajes-description {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.languajes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.languajes-list li {
+    flex: 1;
+    list-style: decimal;
+    list-style-position: inside;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.languajes-list li::marker {
+    color: var(--primary-color);
+    font-size: 20px;
+    text-align: start;
+}
+
+.li-container {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.languajes-list h3 {
+    margin-bottom: 8px;
+}
+
+.languajes-list p {
+    line-height: 1.4;
+}
+
+.certification {
+    position: absolute;
+    top: 37%;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}

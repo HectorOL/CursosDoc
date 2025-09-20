@@ -3,10 +3,11 @@
     {
       "id": "course-101",
       "title": "Introduction to Programming",
-      "description": "Learn the basics of programming using Python.",
+      "description": "Learn the basics of programming using Python. No prior experience required. Start your coding journey today! shs",
       "level": "beginner",
       "number_of_lessons": 10,
-      "duration": "8 weeks"
+      "duration": "8 weeks",
+      "image": "../img/404.jpeg"
     },
     {
       "id": "course-102",
@@ -14,7 +15,8 @@
       "description": "Build modern web applications using HTML, CSS, and JavaScript.",
       "level": "intermediate",
       "number_of_lessons": 15,
-      "duration": "10 weeks"
+      "duration": "10 weeks",
+      "image": "../img/404.jpeg"
     }
   ]
 }
