@@ -17,13 +17,13 @@ main{
 
 .education-title {
     margin-bottom: 10px;
-
 }
 
-.education-description {
-    line-height: 1.4;
-    margin-bottom: 10px;
+.education .section-abstract {
+    margin-bottom: 30px;
 }
+
+
 
 .education-container {
     display: flex;
@@ -37,7 +37,8 @@ main{
     min-width: 300px;
     max-width: 350px;
     font-weight: bold;
-    border: 2px solid #ccc;
+    border: 2px solid var(--border);
+    background-color: var(--card-color);
     border-radius: 10px;
     padding: 30px;
 }
@@ -77,15 +78,6 @@ main{
     margin-bottom: 15px;
 }
 
-.education-button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-
-}
 
 .languajes {
     width: 100%;

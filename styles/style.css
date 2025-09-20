@@ -9,22 +9,56 @@
   --primary-color: #3F81E5;
   --secondary-color: hsl(from var(--primary-color) h s calc(l - 20%));
   --border: #d1d5db;
+  --card-color: #F8F8F8;
   --secondary-text: #424242;
 
   --font-header-size: clamp(0.8rem, 2vw, 1rem);
   --font-header-weight: 400;
 
-  --font-title-size: clamp(2rem, 5vw, 2.7rem);
-  --font-title-weight: 450;
+  --font-title-size: clamp(1rem, 3.5vw, 1.9rem);
+  --font-title-weight: 500;
 
-  --font-subtitle-size: clamp(1.2rem, 3vw, 1.8rem);
-  --font-subtitle-weight: 600;
+  --font-abstract-size: clamp(0.6rem, 1.8vw, 1rem);
+  --font-abstract-weight: 400;
 
-  --font-text-size: clamp(0.9rem, 2vw, 1.1rem);
+  --font-subtitle-size: clamp(.8rem, 3.5vw, 1.5rem);
+  --font-subtitle-weight: 500;
+
+  --font-text-size: clamp(1rem, 2.2vw, 1.1rem);
   --font-text-weight: 400;
 
   --font-button-size: clamp(0.9rem, 2vw, 1.2rem);
   --font-button-weight: 100;
+
+  --font-home-title-size: clamp(1.5rem, 4vw, 2.7rem);
+  --font-home-title-weight: 400;
+}
+
+/* ===== Global Section Styles ===== */
+.section-title {
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 40px;
+}
+
+.section-title h1 {
+  font-size: var(--font-title-size);
+  font-weight: var(--font-title-weight);
+}
+
+.section-abstract {
+  font-size: var(--font-abstract-size);
+  font-weight: var(--font-abstract-weight);
+}
+
+.section-subtitle h1 {
+  font-size: var(--font-subtitle-size);
+  font-weight: var(--font-subtitle-weight);
+}
+
+.section-description {
+  font-size: var(--font-text-size);
+  font-weight: var(--font-text-weight);
 }
 
 .dark {
@@ -68,18 +102,8 @@ body {
   white-space: nowrap;
 }
 
-.info-title {
-  color: var(--text);
-  font-size: var(--font-title-size);
-  font-weight: var(--font-title-weight);
-}
 
-.info-description {
-  color: var(--secondary-text);
-  font-size: var(--font-text-size);
-  font-weight: var(--font-text-weight);
-  margin-top: 10px;
-}
+
 
 li {
   list-style: none;

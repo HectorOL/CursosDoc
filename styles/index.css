@@ -6,6 +6,19 @@ section{
 }
 
 .info-title {
+    color: var(--text);
+    font-size: var(--font-home-title-size);
+    font-weight: var(--font-home-title-weight);
+  }
+  
+  .info-description {
+    color: var(--secondary-text);
+    font-size: var(--font-text-size);
+    font-weight: var(--font-text-weight);
+    margin-top: 10px;
+  }
+
+.info-title {
     margin-bottom: 1.5rem;
 }
 
