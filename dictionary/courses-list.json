@@ -2,19 +2,38 @@
     "courses": [
     {
       "id": "course-101",
-      "title": "Introduction to Programming",
-      "description": "Learn the basics of programming using Python. No prior experience required. Start your coding journey today! shs",
+      "title": "Python for Data Science",
+      "description": "Master Python fundamentals and data analysis with Pandas, NumPy, and Matplotlib.",
       "level": "beginner",
-      "number_of_lessons": 10,
+      "number_of_lessons": 12,
       "duration": "8 weeks",
       "image": "../img/404.jpeg"
     },
     {
       "id": "course-102",
-      "title": "Web Development Fundamentals",
-      "description": "Build modern web applications using HTML, CSS, and JavaScript.",
+      "title": "Machine Learning with TensorFlow",
+      "description": "Build and deploy ML models using TensorFlow and scikit-learn.",
+      "level": "intermediate",
+      "number_of_lessons": 9,
+      "duration": "10 weeks",
+      "image": "../img/404.jpeg"
+    },
+    {
+      "id": "course-102",
+      "title": "SQL Database Mastery",
+      "description": "Advanced SQL queries, database design, and optimization techniques.",
       "level": "intermediate",
       "number_of_lessons": 15,
+      "duration": "10 weeks",
+      "image": "../img/404.jpeg"
+    }
+    ,
+    {
+      "id": "course-102",
+      "title": "Python for Data Science",
+      "description": "Master Python fundamentals and data analysis with Pandas, NumPy, and Matplotlib.",
+      "level": "intermediate",
+      "number_of_lessons": 12,
       "duration": "10 weeks",
       "image": "../img/404.jpeg"
     }

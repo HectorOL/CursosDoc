@@ -22,13 +22,14 @@ main{
 
 .course {
     min-width: 300px;
-    max-width: 350px;
+    max-width: 400px;
     font-weight: bold;
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    flex: 0 0 calc(33.333% - 10px);
 }
 
 .course img {
@@ -46,40 +47,50 @@ main{
 }
 
 .level {
-    background-color: #3f81e5;
+    background-color: #00A158;
     color: white;
-    padding: 5px 10px;
+    padding: 1% 5%;
     border-radius: 5px;
-    text-transform: capitalize;
-    font-weight: normal;
+    font-size: .9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .number-classes {
-    color: #777;
+    color: #898989;
     padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: normal;
+    font-size: .8rem;
+    font-weight: 300;
 }
 
 .course h2 {
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    min-height: 3.6rem;
+    display: flex;
+    align-items: center;
 }
 
 .course p {
     font-weight: normal;
     line-height: 1.4;
     margin-bottom: 15px;
-} 
+}
 
 .course a {
     width: 100%;
     margin-top: auto;
-    padding: 5px 15px;
+    padding: 1% 5%;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-    bottom: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
+
+
 
