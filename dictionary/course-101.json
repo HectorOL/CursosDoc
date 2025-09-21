@@ -6,6 +6,7 @@
     "level": "Beginner",
     "number_of_lessons": 12,
     "duration": "80 hours",
+    "image": "../img/404.jpeg",
     "lessons": [
         {
             "lesson_id": "lesson-1",

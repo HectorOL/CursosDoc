@@ -33,14 +33,16 @@ main{
 }
 
 .education-level {
-    flex: 1;
+    flex: 0 0 calc(33.333% - 10px);
     min-width: 300px;
-    max-width: 350px;
+    max-width: 400px;
     font-weight: bold;
     border: 2px solid var(--border);
     background-color: var(--card-color);
     border-radius: 10px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .education-image {
@@ -52,19 +54,39 @@ main{
 }
 
 .level-title {
-    margin-bottom: 10px;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    min-height: 3.6rem;
+    display: flex;
+    align-items: center;
 }
 
 .level-description {
-    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 400;
     margin-bottom: 10px;
+
+
 }
 .level-list {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.level-list li {
+.level-list dt {
     margin-bottom: 5px;
+    font-weight: bold;
+    float: left;
+    clear: left;
+    margin-right: 10px;
+}
+
+.level-list dd {
+    margin: 0 0 15px 0;
     font-weight: normal;
 }
 
@@ -76,6 +98,11 @@ main{
 
 .available-projects {
     margin-bottom: 15px;
+    min-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -94,6 +121,7 @@ main{
 }
 
 .languajes-list {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -109,6 +137,9 @@ main{
     border-radius: 10px;
     padding: 20px;
     position: relative;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .languajes-list li::marker {
@@ -118,12 +149,19 @@ main{
 }
 
 .li-container {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 
 .languajes-list h3 {
     margin-bottom: 8px;
+    min-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .languajes-list p {
@@ -138,6 +176,24 @@ main{
     color: white;
     padding: 8px 20px;
     border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.education-button {
+    width: auto;
+    align-self: flex-start;
+    padding: 1% 5%;
+}
+
+.languajes-title {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.languajes-title i {
+    color: var(--primary-color);
+    font-size: 1.2em;
 }
