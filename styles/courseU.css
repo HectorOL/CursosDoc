@@ -1,0 +1,179 @@
+:root {
+ 	--font-description-size: clamp(.7rem, 2.2vw, .9rem); 
+    --font-autor-size: clamp(.6rem, 1.8vw, .8rem);
+}  
+
+/* Estilos para el link de regreso */
+.go-back-link {
+	color: var(--secondary-color);
+	text-decoration: none;
+	font-size: var(--font-abstract-size);
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	transition: color 0.2s;
+}
+.go-back-link i {
+	transition: transform 0.3s;
+}
+.go-back-link:hover {
+	color: var(--secondary-color);
+}
+.go-back-link:hover i {
+	transform: translateX(-6px);
+}
+
+#course-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.go-back {
+	margin-bottom: 0.7rem;
+	width: fit-content;
+	min-width: 0;
+}
+.go-back-link:hover {
+	color: var(--secondary-color);
+}
+
+.course-banner {
+	position: relative;
+	width: 100%;
+	min-height: 150px;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.course-banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+	filter: brightness(0.5) blur(2px) contrast(1.1) saturate(1.2);
+	transform: scale(1.08) skewX(-3deg);
+}
+.course-banner-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	justify-content: flex-start;
+    padding-left: 3rem;
+}
+.course-banner h1 {
+	color: #fff;
+	font-size: var(--font-title-size);
+	font-weight: 700;
+	margin-bottom: 0.1rem;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.course-banner p {
+	color: #fff;
+	font-size: var(--font-autor-size);
+	font-weight: 300;
+	margin-bottom: 0;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+
+.course-description {
+	background: var(--background);
+	padding: .5rem 0rem;
+}
+.course-description p {
+	font-size: var(--font-description-size);
+	color: var(--text);
+	margin-bottom: 1.1rem;
+}
+.extra-info {
+	display: flex;
+	gap: 2rem;
+    font-size: var(--font-description-size);
+}
+.extra-info span {
+	padding: 0.3rem 0.8rem;
+	border-radius: 6px;
+}
+
+.extra-info i {
+    margin-right: 0.3rem;
+    color: var(--secondary-color);
+}
+
+.level{
+    background-color: #00A158;
+    color: white;
+    padding: 1% 5%;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-content {
+	background: var(--background);
+	border-radius: 10px;
+}
+.course-content h2 {
+	font-size: var(--font-subtitle-size);
+    color: var(--text-color);
+    font-weight: 500;
+	margin-bottom: 1rem;
+}
+.class-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.class-list li {
+	background: var(--card-color);
+	border-radius: 8px;
+	padding: 0.8rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.class-list a {
+	color: var(--text);
+	text-decoration: none;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap: 0.7rem;
+	transition: color 0.2s;
+}
+.class-list a:hover {
+	color: var(--primary-color);
+}
+.video-duration {
+	font-size: 0.9rem;
+	color: var(--secondary-text);
+	background: var(--background);
+	border-radius: 5px;
+	padding: 0.2rem 0.7rem;
+	margin-left: 1rem;
+}
+
+@media (max-width: 900px) {
+	#course-container {
+		padding: 1.2rem 2vw;
+		max-width: 99vw;
+	}
+	.course-banner {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.7rem;
+	}
+}

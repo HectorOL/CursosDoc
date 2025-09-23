@@ -7,7 +7,7 @@
   --background: #ffffff;
   --text: #3B3B3B;
   --primary-color: #3F81E5;
-  --secondary-color: hsl(from var(--primary-color) h s calc(l - 20%));
+  --secondary-color: #6B7280;
   --border: #d1d5db;
   --card-color: #F8F8F8;
   --secondary-text: #424242;
@@ -42,32 +42,37 @@
 }
 
 .section-title h1 {
+  color: var(--text);
   font-size: var(--font-title-size);
   font-weight: var(--font-title-weight);
 }
 
 .section-abstract {
+  color: var(--secondary-text);
   font-size: var(--font-abstract-size);
   font-weight: var(--font-abstract-weight);
 }
 
 .section-subtitle h1 {
+  color: var(--text);
   font-size: var(--font-subtitle-size);
   font-weight: var(--font-subtitle-weight);
 }
 
 .section-description {
+  color: var(--secondary-text);
   font-size: var(--font-text-size);
   font-weight: var(--font-text-weight);
 }
 
 .dark {
-  --background: #111827;
-  --foreground: #f9fafb;
-  --accent: #3b82f6;
-  --accent-hover: #1e40af;
-  --border: #374151;
-  --muted: #9ca3af;
+  --background: #181A20;
+  --text: #E3E6ED;
+  --primary-color: #5A8DEE;
+  --secondary-color: #AAB4C0;
+  --border: #23272F;
+  --card-color: #23272F;
+  --secondary-text: #AAB4C0;
 }
 
 /* ===== Reset ===== */
@@ -117,6 +122,8 @@ header {
   max-width: 100vw;
   padding: 0 15%;
   border-bottom: 2px solid var(--border);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 header a {

@@ -1,12 +1,12 @@
 {
     "course_id": "course-101",
-    "title": "Course 101",
+    "title": "Python for Data Sciencie",
     "autor": "Jane Doe",
-    "description": "This course provides an introduction to programming concepts and techniques using Python. It covers fundamental topics such as variables, data types, control structures, functions, and basic data structures.",
+    "description": "Master Python fundamentals and learn to analyze data with Pandas, NumPy, and matplotlib. This course will guide you through writing efficient code, handling datasets, and creating visualizations to turn data into insights.",
     "level": "Beginner",
     "number_of_lessons": 12,
-    "duration": "80 hours",
-    "image": "../img/404.jpeg",
+    "duration": "80",
+    "image": "../img/banner.jpg",
     "lessons": [
         {
             "lesson_id": "lesson-1",

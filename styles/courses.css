@@ -77,11 +77,6 @@ main{
     font-weight: normal;
     line-height: 1.4;
     margin-bottom: 15px;
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-    font-size: .9rem;
-    font-weight: 400;
 }
 
 .course a {
