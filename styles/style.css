@@ -248,9 +248,38 @@ main {
     font-size: 1.4rem;
     font-weight: 600;
 }
-
-
 /* Responsive Design */
+
+@media (max-width: 1000px) {
+  nav{
+    position: relative;
+  }
+
+  .nav-links{
+    z-index: 3;
+    position: absolute;
+    top: 80px;
+    left: -15%;
+    width: 130%;
+    background-color: var(--background);
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--border);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .nav-links li{
+    min-width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding: 0 10%;
@@ -265,9 +294,6 @@ main {
     gap: 5vw;
   }
 
-  nav ul{
-    display: none;
-  }
 
   .menu-icon {
     display: block;
@@ -280,4 +306,13 @@ main {
   }
 
 
+}
+
+.menu-active {
+    display: flex;
+}
+
+.disable-icons {
+    display: none;
+    pointer-events: none;
 }

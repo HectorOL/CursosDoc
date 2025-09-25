@@ -90,6 +90,32 @@ section{
     left: -30px;
 }
 
+@media screen and (max-width: 1000px) {
+    .personal-image img {
+        width: 90%;
+    }
+
+    .info {
+        padding-right: 20px;
+    }
+
+    .social-networks {
+        width: 40%;
+    }
+    
+    .buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons a {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column-reverse;
