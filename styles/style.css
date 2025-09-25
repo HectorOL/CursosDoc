@@ -101,6 +101,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
+  display: none;
 }
 
 .logo-text {
@@ -255,6 +256,16 @@ main {
     position: relative;
   }
 
+  .logo-img {
+    display: block;
+  }
+  
+  .menu-icon {
+    display: block;
+    flex : 1;
+    margin-right: 10px;
+  }
+
   .nav-links{
     z-index: 3;
     position: absolute;
@@ -278,10 +289,8 @@ main {
     flex-direction: column;
     gap: 5px;
   }
-}
 
-@media (max-width: 768px) {
-  header {
+    header {
     padding: 0 10%;
   }
 
@@ -295,15 +304,14 @@ main {
   }
 
 
-  .menu-icon {
-    display: block;
-    flex : 1;
-    margin-right: 10px;
-  }
   
   .dark-mode-toggle {
     flex: 1;
   }
+}
+
+@media (max-width: 768px) {
+
 
 
 }
