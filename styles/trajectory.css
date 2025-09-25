@@ -34,9 +34,8 @@ main{
 }
 
 .education-level {
-    flex: 1 1 calc(33.333% - 10px);
-    min-width: 300px;
-    max-width: 500px;
+    flex: 0 0 calc(33.333% - 10px);
+    max-width: 400px;
     font-weight: bold;
     border: 2px solid var(--border);
     background-color: var(--card-color);
