@@ -166,6 +166,54 @@
 	margin-left: 1rem;
 }
 
+.lessons-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.lessons-table th, .lessons-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+    width: 50%;
+}
+
+.lessons-table th {
+    background-color: var(--card-color);
+    font-weight: 600;
+    color: var(--secondary-text);
+}
+
+.lessons-table td{
+	position: relative;
+}
+
+.lessons-table td a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.7rem;
+    transition: color 0.2s;
+}
+
+.lessons-table td a:hover {
+    color: var(--primary-color);
+}
+
+.lessons-table .duration {
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+	right: 20px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0.2rem 0.7rem;
+}
+
+
 @media (max-width: 900px) {
 	#course-container {
 		padding: 1.2rem 2vw;
@@ -176,4 +224,27 @@
 		align-items: flex-start;
 		gap: 0.7rem;
 	}
+
+	.lessons-table tr,
+	.lessons-table td {
+		display: block;
+		width: 100%;
+	}
+
+	.lessons-table tr {
+		margin-bottom: 1rem; 
+        border-bottom: 2px solid var(--border-color);
+	}
+    
+    .lessons-table td a {
+        display: inline-flex; 
+    }
+    .lessons-table td:empty {
+        display: none;
+    }
+    .lessons-table td {
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

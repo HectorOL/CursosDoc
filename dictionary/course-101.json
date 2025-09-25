@@ -7,28 +7,96 @@
     "number_of_lessons": 12,
     "duration": "80",
     "image": "../img/banner.jpg",
-    "lessons": [
+    "lessons": {    
+        "Unit 1": [
+            {
+                "unit_name": "Introduction to Python"
+            },
+            {
+                "lesson_id": "lesson-1",
+                "type": "document",
+                "title": "Getting Started with Python",
+                "duration": "1 hour",
+                "file_url": "course-101/lesson-1",
+                "number" : 1
+                
+            }
+            ,
+            {
+                "lesson_id": "lesson-2",
+                "type": "video",
+                "title": "Variables and Data Types",
+                "duration": "1.5 hours",
+                "video_url": "https://example.com/videos/lesson-2",
+                "number" : 2
+            },
+            {
+                "lesson_id": "lesson-3",
+                "type": "document",
+                "title": "Control Structures",
+                "duration": "1 hour",
+                "file_url": "course-101/lesson-3",
+                "number" : 3
+            }
+        ],
+        "Unit 2": [
         {
-            "lesson_id": "lesson-1",
-            "type": "document",
-            "title": "Getting Started with Python",
-            "duration": "1 hour",
-            "file_url": "course-101/lesson-1"
-        }
-        ,
-        {
-            "lesson_id": "lesson-2",
-            "type": "video",
-            "title": "Variables and Data Types",
-            "duration": "1.5 hours",
-            "video_url": "https://example.com/videos/lesson-2"
+            "unit_name": "Data Analysis with Pandas"
         },
         {
-            "lesson_id": "lesson-3",
+            "lesson_id": "lesson-4",
+            "type": "video",
+            "title": "Introduction to Pandas",
+            "duration": "1.5 hours",
+            "video_url": "https://example.com/videos/lesson-4",
+            "number" : 4
+        },
+        {
+            "lesson_id": "lesson-5",
             "type": "document",
-            "title": "Control Structures",
+            "title": "DataFrames and Series",
             "duration": "1 hour",
-            "file_url": "course-101/lesson-3"
+            "file_url": "course-101/lesson-5",
+            "number" : 5
+        },
+        {
+            "lesson_id": "lesson-6",
+            "type": "video",
+            "title": "Data Cleaning and Preparation",
+            "duration": "2 hours",
+            "video_url": "https://example.com/videos/lesson-6",
+            "number" : 6
+        }
+    ],
+    "Unit 3": [
+        {
+            "unit_name": "Data Visualization with matplotlib"
+        },
+        {
+            "lesson_id": "lesson-7",
+            "type": "document",
+            "title": "Getting Started with matplotlib",
+            "duration": "1 hour",
+            "file_url": "course-101/lesson-7",
+            "number" : 7
+        },
+        {
+            "lesson_id": "lesson-8",
+            "type": "video",
+            "title": "Creating Basic Plots",
+            "duration": "1.5 hours",
+            "video_url": "https://example.com/videos/lesson-8",
+            "number" : 8
+        },
+        {
+            "lesson_id": "lesson-9",
+            "type": "document",
+            "title": "Advanced Visualization Techniques",
+            "duration": "1 hour",
+            "file_url": "course-101/lesson-9",
+            "number" : 9
         }
     ]
+    }
+    
 }
