@@ -34,9 +34,9 @@ main{
 }
 
 .education-level {
-    flex: 0 0 calc(33.333% - 10px);
+    flex: 1 1 calc(33.333% - 10px);
     min-width: 300px;
-    max-width: 400px;
+    max-width: 500px;
     font-weight: bold;
     border: 2px solid var(--border);
     background-color: var(--card-color);
@@ -197,4 +197,16 @@ main{
 .languajes-title i {
     color: var(--primary-color);
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 20px 7%;
+        height: auto;
+    }
+
+    .education-level{
+        flex : 1 1 calc(50% - 10px);
+        max-width: 100%;
+    }
 }

@@ -185,15 +185,12 @@ section {
 }
 
 @media screen and (max-width: 1000px) {
-
-}
-
-@media screen and (max-width: 768px) {
-    /* --- Ajustes generales (estos no cambian) --- */
     main {
         padding: 20px 7%;
         height: auto;
     }
+    /* --- Ajustes generales (estos no cambian) --- */
+
 
     .about-info {
         flex-direction: column;

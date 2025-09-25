@@ -21,8 +21,6 @@ main{
 }
 
 .course {
-    min-width: 300px;
-    max-width: 400px;
     font-weight: bold;
     border: 2px solid #ccc;
     border-radius: 10px;
@@ -94,3 +92,15 @@ main{
 
 
 
+
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 20px 7%;
+        height: auto;
+    }
+
+    .course{
+        flex : 1 1 calc(50% - 10px);
+        max-width: 100%;
+    }
+}
