@@ -1,40 +1,30 @@
 {
     "courses": [
     {
-      "id": "course-101",
-      "title": "Python for Data Science",
-      "description": "Master Python fundamentals and data analysis with Pandas, NumPy, and Matplotlib.",
-      "level": "beginner",
-      "number_of_lessons": 12,
-      "duration": "8 weeks",
+      "id": "Python_Data_Science_AI",
+      "title": "Python for Data Science and AI",
+      "description": "Learn Python programming and its applications in data science and artificial intelligence.",
+      "level": "Beginner",
+      "number_of_lessons": 24,
+      "duration": "15 hours",
       "image": "../img/404.jpeg"
     },
     {
-      "id": "course-102",
-      "title": "Machine Learning with TensorFlow",
-      "description": "Build and deploy ML models using TensorFlow and scikit-learn.",
-      "level": "intermediate",
-      "number_of_lessons": 9,
-      "duration": "10 weeks",
+      "id": "Python_for_Data_Science",
+      "title": "Python for Data Science",
+      "description": "Learn Python from scratch to practical applications in data science and machine learning.",
+      "level": "Beginner",
+      "number_of_lessons": 22,
+      "duration": "14 hours",
       "image": "../img/404.jpeg"
     },
     {
-      "id": "course-102",
-      "title": "SQL Database Mastery",
-      "description": "Advanced SQL queries, database design, and optimization techniques.",
-      "level": "intermediate",
-      "number_of_lessons": 15,
-      "duration": "10 weeks",
-      "image": "../img/404.jpeg"
-    }
-    ,
-    {
-      "id": "course-102",
-      "title": "Python for Data Science",
-      "description": "Master Python fundamentals and data analysis with Pandas, NumPy, and Matplotlib.",
-      "level": "intermediate",
-      "number_of_lessons": 12,
-      "duration": "10 weeks",
+      "id": "Machine_Learning_with_Python",
+      "title": "Machine Learning with Python",
+      "description": "An introductory course to Machine Learning with Python.",
+      "level": "Beginner",
+      "number_of_lessons": 22,
+      "duration": "15 hours",
       "image": "../img/404.jpeg"
     }
   ]

@@ -64,7 +64,7 @@ getCourseData(courseId).then(course => {
         <div class="extra-info">
             <span class="level"><i class="fas fa-signal"></i> Nivel: ${course.level}</span>
             <span class="number-classes"><i class="fas fa-book"></i> Lecciones: ${course.number_of_lessons}</span>
-            <span class="duration"><i class="fas fa-clock"></i> Duración: ${course.duration} mins</span>
+            <span class="duration"><i class="fas fa-clock"></i> Duración: ${course.duration}</span>
         </div>
     `;
 
@@ -99,16 +99,16 @@ getCourseData(courseId).then(course => {
             let videoCellHTML = '';
 
             if (lesson.type === 'document') {
-                docCellHTML = `<a href="reader.html?url=${lesson.file_url}">${lesson.title}</a><span class="duration">${lesson.duration}</span>`;
+                docCellHTML = `<a href="reader.html?url=${lesson.file_url}"> <i class="fas fa-file-alt"></i> ${lesson.title}</a><span class="duration">${lesson.duration}</span>`;
                 if (i + 1 < actualLessons.length && actualLessons[i + 1].type === 'video') {
                     const nextLesson = actualLessons[i + 1];
-                    videoCellHTML = `<a href="${nextLesson.video_url}">${nextLesson.title}</a><span class="duration">${nextLesson.duration}</span>`;
+                    videoCellHTML = `<a href="${nextLesson.video_url}" target="_blank"><i class="fas fa-video"></i> ${nextLesson.title}</a><span class="duration">${nextLesson.duration}</span>`;
                     i++;
                 }
                 i++;
             
             } else if (lesson.type === 'video') {
-                videoCellHTML = `<a href="${lesson.video_url}">${lesson.title}</a><span class="duration">${lesson.duration}</span>`;
+                videoCellHTML = `<a href="${lesson.video_url}" target="_blank"><i class="fas fa-video"></i> ${lesson.title}</a><span class="duration">${lesson.duration}</span>`;
                 i++;
             }
             row.innerHTML = `<td data-label="Documento">${docCellHTML}</td><td data-label="Video">${videoCellHTML}</td>`;

@@ -1,0 +1,198 @@
+{
+    "course_id": "Machine_Learning_with_Python",
+    "title": "Machine Learning with Python",
+    "autor": "Benito Vicente Franco López",
+    "description": "An introductory course to Machine Learning with Python. It covers the fundamentals of data science, Python programming for ML, and classic algorithms like K-Nearest Neighbors, K-Means, Naive Bayes, Linear Regression, and Decision Trees.",
+    "level": "Beginner",
+    "number_of_lessons": 22,
+    "duration": "15 hours",
+    "image": "../img/banner.jpg",
+    "lessons": {
+        "Unit 1": [
+            {
+                "unit_name": "Propaedeutic and Python Fundamentals"
+            },
+            {
+                "lesson_id": "lesson-1",
+                "type": "video",
+                "title": "Python + Data Science - Python Installation",
+                "duration": "15 min.",
+                "video_url": "https://youtu.be/a7_Azkwy4sI?si=Y7ZBkhhLiY6G9aun",
+                "number": 1
+            },
+            {
+                "lesson_id": "lesson-2",
+                "type": "video",
+                "title": "Programming Environment Setup",
+                "duration": "25 min.",
+                "video_url": "https://youtu.be/h5Rcvv0QHSg?si=pm67pV_zWVMjM3_F",
+                "number": 2
+            },
+            {
+                "lesson_id": "lesson-3",
+                "type": "video",
+                "title": "Basic Python - Learn Programming Fundamentals",
+                "duration": "30 min.",
+                "video_url": "https://youtu.be/tn_X_3qpyrU",
+                "number": 3
+            },
+            {
+                "lesson_id": "lesson-4",
+                "type": "video",
+                "title": "Functions with Python - Functional Programming From Scratch",
+                "duration": "35 min.",
+                "video_url": "https://youtu.be/sfyN3G1WuGw",
+                "number": 4
+            },
+            {
+                "lesson_id": "lesson-5",
+                "type": "video",
+                "title": "Introduction to Data Science",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1ZrKXV_EknSRMLbpxya3PB65WnakQGqqn/view?usp=sharing",
+                "number": 5
+            },
+            {
+                "lesson_id": "lesson-6",
+                "type": "video",
+                "title": "Using the Colab Environment",
+                "duration": "20 min.",
+                "video_url": "https://youtu.be/ADMwPkhB4Mw",
+                "number": 6
+            },
+            {
+                "lesson_id": "lesson-7",
+                "type": "document",
+                "title": "Data Types in Python",
+                "duration": "15 min.",
+                "file_url": "Machine_Learning_with_Python/Unit_1/Fundamentos_de_Python_en.ipynb",
+                "number": 7
+            },
+            {
+                "lesson_id": "lesson-8",
+                "type": "video",
+                "title": "Data Types in Python",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1Dkm-DLp9EA71Z2r50b36Pqm8DU47NvnY/view?usp=sharing",
+                "number": 8
+            },
+            {
+                "lesson_id": "lesson-9",
+                "type": "document",
+                "title": "Conditionals, Loops, and Functions",
+                "duration": "20 min.",
+                "file_url": "Machine_Learning_with_Python/Unit_1/Ciclos_condicionales_y_funciones_en.ipynb",
+                "number": 9
+            },
+            {
+                "lesson_id": "lesson-10",
+                "type": "video",
+                "title": "Conditionals, Loops, and Functions",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1XP6zBrxlHDoiJKQijGaRZ4ArLvgNDPqu/view?usp=sharing",
+                "number": 10
+            }
+        ],
+        "Unit 2": [
+            {
+                "unit_name": "Machine Learning Algorithms"
+            },
+            {
+                "lesson_id": "lesson-11",
+                "type": "document",
+                "title": "The K-Neighbors Algorithm",
+                "duration": "20 min.",
+                "file_url": "Machine_Learning_with_Python/Unit_2/Mi_primer_algoritmo_de_machine_learning_en.ipynb",
+                "number": 11
+            },
+            {
+                "lesson_id": "lesson-12",
+                "type": "video",
+                "title": "The K-Neighbors Algorithm",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1paN5fXn4q75IL5N8ymrr8HQys6qkNcpj/view?usp=sharing",
+                "number": 12
+            },
+            {
+                "lesson_id": "lesson-13",
+                "type": "document",
+                "title": "The K-Means Algorithm",
+                "duration": "25 min.",
+                "file_url": "Machine_Learning_with_Python/Unit_2/El_algoritmo_de_kmeans_en.ipynb",
+                "number": 13
+            },
+            {
+                "lesson_id": "lesson-14",
+                "type": "video",
+                "title": "The K-Means Algorithm",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/16elC6fdxeP_h0vhkZxHXJeJUIbqswVvs/view?usp=sharing",
+                "number": 14
+            },
+            {
+                "lesson_id": "lesson-15",
+                "type": "document",
+                "title": "Naive Bayes",
+                "duration": "15 min.",
+                "file_url": "Machine_Learning_with_Python/Unit_2/El_algoritmo_de_Naive_Bayes_en.ipynb",
+                "number": 15
+            },
+            {
+                "lesson_id": "lesson-16",
+                "type": "video",
+                "title": "Naive Bayes",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1Qq9TYrxp76F2dfaa-v4z8WraX7dptr1K/view?usp=sharing",
+                "number": 16
+            },
+            {
+                "lesson_id": "lesson-17",
+                "type": "document",
+                "title": "Introduction to Linear Regression",
+                "duration": "30 minutes",
+                "file_url": "Machine_Learning_with_Python/Unit_2/Regresión_lineal_con_Python_en.ipynb",
+                "number": 17
+            },
+            {
+                "lesson_id": "lesson-18",
+                "type": "video",
+                "title": "Introduction to Linear Regression",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1kl_sWgUrq5lW9Aol0paLocwXEGTsTdAW/view?usp=sharing",
+                "number": 18
+            },
+            {
+                "lesson_id": "lesson-19",
+                "type": "document",
+                "title": "Logistic Regression and Decision Trees",
+                "duration": "25 min.",
+                "file_url": "Machine_Learning_with_Python/Unit_2/Regresión_Lógistica_y_arboles_de_decisión_en.ipynb",
+                "number": 19
+            },
+            {
+                "lesson_id": "lesson-20",
+                "type": "video",
+                "title": "Logistic Regression and Decision Trees",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1Z8nHPW1RTXnqYDvRhXaY-vdDQVj47oJZ/view?usp=sharing",
+                "number": 20
+            },
+            {
+                "lesson_id": "lesson-21",
+                "type": "document",
+                "title": "Evaluating Machine Learning Algorithms",
+                "duration": "20 min.",
+                "file_url": "Machine_Learning_with_Python/Unit_2/Evaluación_de_algoritmos_en.ipynb",
+                "number": 21
+            },
+            {
+                "lesson_id": "lesson-22",
+                "type": "video",
+                "title": "Evaluating Machine Learning Algorithms",
+                "duration": "50 min.",
+                "video_url": "https://drive.google.com/file/d/1cHegZrRlTcALAkPnfg3d3_fJjWiOOKot/view?usp=sharing",
+                "number": 22
+            }
+        ]
+    }
+}

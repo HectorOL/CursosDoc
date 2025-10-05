@@ -1,0 +1,203 @@
+{
+    "course_id": "Python_for_Data_Science",
+    "title": "Python for Data Science and AI",
+    "autor": "Benito Vicente Franco López",
+    "description": "Learn Python from scratch to practical applications in data science and web development. This course covers programming fundamentals, OOP, data handling with Pandas, API creation with FastAPI and Flask, and applications using the OpenAI API.",
+    "level": "Beginner",
+    "number_of_lessons": 22,
+    "duration": "14 hours",
+    "image": "../img/banner.jpg",
+    "lessons": {
+        "Unit 1": [
+            {
+                "unit_name": "Propaedeutic Classes"
+            },
+            {
+                "lesson_id": "lesson-1",
+                "type": "video",
+                "title": "Python + Data Science - Python Installation",
+                "duration": "15 min.",
+                "video_url": "https://youtu.be/a7_Azkwy4sI?si=Y7ZBkhhLiY6G9aun",
+                "number": 1
+            },
+            {
+                "lesson_id": "lesson-2",
+                "type": "video",
+                "title": "Programming Environment Setup",
+                "duration": "25 min.",
+                "video_url": "https://youtu.be/h5Rcvv0QHSg?si=pm67pV_zWVMjM3_F",
+                "number": 2
+            },
+            {
+                "lesson_id": "lesson-3",
+                "type": "video",
+                "title": "Basic Python - Learn Programming Fundamentals",
+                "duration": "30 min.",
+                "video_url": "https://youtu.be/tn_X_3qpyrU",
+                "number": 3
+            },
+            {
+                "lesson_id": "lesson-4",
+                "type": "video",
+                "title": "Functions with Python - Functional Programming From Scratch",
+                "duration": "35 min.",
+                "video_url": "https://youtu.be/sfyN3G1WuGw",
+                "number": 4
+            }
+        ],
+        "Unit 2": [
+            {
+                "unit_name": "Core Concepts and Applications"
+            },
+            {
+                "lesson_id": "lesson-5",
+                "type": "document",
+                "title": "Introduction to Python",
+                "duration": "15 min.",
+                "file_url": "Python_Data_Science/Unit_2/Python_desde_Cero_en.ipynb",
+                "number": 5
+            },
+            {
+                "lesson_id": "lesson-6",
+                "type": "video",
+                "title": "Python From Scratch - Level 1",
+                "duration": "30 min.",
+                "video_url": "https://youtu.be/-UyR33j-w18",
+                "number": 6
+            },
+            {
+                "lesson_id": "lesson-7",
+                "type": "document",
+                "title": "Data Types in Python",
+                "duration": "20 min.",
+                "file_url": "Python_Data_Science/Unit_2/Python_Introduccion_2_en.ipynb",
+                "number": 7
+            },
+            {
+                "lesson_id": "lesson-8",
+                "type": "video",
+                "title": "Data Types in Python",
+                "duration": "50 min.",
+                "video_url": "https://drive.google.com/file/d/1-x9-CfEvGsw04om7gY_3IsUGlbN0aERk/view?usp=sharing",
+                "number": 8
+            },
+            {
+                "lesson_id": "lesson-9",
+                "type": "document",
+                "title": "Conditionals, Loops, and Functions",
+                "duration": "20 min.",
+                "file_url": "Python_Data_Science/Unit_2/Fundamentos_de_Python_2_en.ipynb",
+                "number": 9
+            },
+            {
+                "lesson_id": "lesson-10",
+                "type": "video",
+                "title": "Conditionals, Loops, and Functions",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1zBtkKNKkxS6UaxGI-Z1sjtW1iqWta2VZ/view?usp=sharing",
+                "number": 10
+            },
+            {
+                "lesson_id": "lesson-11",
+                "type": "document",
+                "title": "Object-Oriented Programming",
+                "duration": "20 min.",
+                "file_url": "Python_Data_Science/Unit_2/Programacion_orientada_objetos_2025_en.ipynb",
+                "number": 11
+            },
+            {
+                "lesson_id": "lesson-12",
+                "type": "video",
+                "title": "Introduction to OOP",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1lcU5adTbEsOltk0EKg2dRodKF4zNekwa/view?usp=sharing",
+                "number": 12
+            },
+            {
+                "lesson_id": "lesson-13",
+                "type": "video",
+                "title": "Introduction to FastAPI",
+                "duration": "20 min.",
+                "video_url": "https://youtu.be/oEAPSpH2M1c?si=L1v_z2giUfeSbrPe",
+                "number": 13
+            },
+            {
+                "lesson_id": "lesson-14",
+                "type": "document",
+                "title": "Data Handling with Pandas",
+                "duration": "30 min.",
+                "file_url": "Python_Data_Science/Unit_2/Uso_de_Pandas_exploración_de_datos_en.ipynb",
+                "number": 14
+            },
+            {
+                "lesson_id": "lesson-15",
+                "type": "video",
+                "title": "Data Handling with Pandas",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1VjMU41oMr7yEbFX14yDUoCsAhC3AbGsM/view?usp=sharing",
+                "number": 15
+            },
+            {
+                "lesson_id": "lesson-16",
+                "type": "video",
+                "title": "Flask Web Application",
+                "duration": "30 min.",
+                "video_url": "https://youtu.be/5zanJtAibLo",
+                "number": 16
+            },
+            {
+                "lesson_id": "lesson-17",
+                "type": "document",
+                "title": "Using the OpenAI API",
+                "duration": "15 min.",
+                "file_url": "Python_Data_Science/Unit_2/Introduccion_a_la_API_de_openIA_en.ipynb",
+                "number": 17
+            },
+            {
+                "lesson_id": "lesson-18",
+                "type": "video",
+                "title": "Using the OpenAI API",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1JFY2bobnk1iFEH4Hosy3ujxrRK4BRxcu/view?usp=sharing",
+                "number": 18
+            },
+            {
+                "lesson_id": "lesson-19",
+                "type": "document",
+                "title": "Portfolio Optimization",
+                "duration": "30 min.",
+                "file_url": "Python_Data_Science/Unit_2/Portafolio_Markowitz_en.ipynb",
+                "number": 19
+            },
+            {
+                "lesson_id": "lesson-20",
+                "type": "video",
+                "title": "Portfolio Optimization",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1hk-oaSRgUg3E8_L8DHCTn2CJZ7OdbCVG/view?usp=sharing",
+                "number": 20
+            }
+        ],
+        "Unit 3": [
+            {
+                "unit_name": "Extra Classes"
+            },
+            {
+                "lesson_id": "lesson-21",
+                "type": "video",
+                "title": "Python for Data Science",
+                "duration": "20 min.",
+                "video_url": "https://youtu.be/ADMwPkhB4Mw",
+                "number": 21
+            },
+            {
+                "lesson_id": "lesson-22",
+                "type": "video",
+                "title": "Data Structures and an Introduction to Python",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1Dkm-DLp9EA71Z2r50b36Pqm8DU47NvnY/view?usp=sharing",
+                "number": 22
+            }
+        ]
+    }
+}

@@ -123,7 +123,9 @@
 }
 
 .course-content {
-	background: var(--background);
+	background: #eee;
+	padding: 1.5rem 2rem;
+	border: 1px solid #ccc;
 	border-radius: 10px;
 }
 .course-content h2 {
@@ -192,6 +194,9 @@
 
 .lessons-table td a {
     color: var(--text);
+	display: block;
+	max-width: 80%;
+	text-wrap: wrap;
     text-decoration: none;
     font-weight: 500;
     align-items: center;
@@ -217,7 +222,9 @@
 @media (max-width: 1000px) {
 	#course-container {
 		padding: 1.2rem 2vw;
+		padding-bottom: 40vh;
 		max-width: 99vw;
+
 	}
 	.course-banner {
 		gap: 0.7rem;
@@ -235,7 +242,8 @@
 	}
     
     .lessons-table td a {
-        display: inline-flex; 
+        display: inline-flex;
+		max-width: 70%; 
     }
     .lessons-table td:empty {
         display: none;

@@ -1,0 +1,220 @@
+{
+    "course_id": "Python_Data_Science_AI",
+    "title": "Python for Data Science and AI",
+    "autor": "Benito Vicente Franco López",
+    "description": "Learn Python from scratch to practical applications in data science and machine learning. The course covers programming fundamentals, OOP, Pandas, web scraping, bots, and ML models like KNN and Logistic Regression, with a final project on report automation with OpenAI.",
+    "level": "Beginner",
+    "number_of_lessons": 24,
+    "duration": "15 hours",
+    "image": "../img/banner.jpg",
+    "lessons": {
+        "Unit 1": [
+            {
+                "unit_name": "Introductory Classes"
+            },
+            {
+                "lesson_id": "lesson-1",
+                "type": "video",
+                "title": "Python + Data Science - Python Installation",
+                "duration": "15 min.",
+                "video_url": "https://youtu.be/a7_Azkwy4sI?si=Y7ZBkhhLiY6G9aun",
+                "number": 1
+            },
+            {
+                "lesson_id": "lesson-2",
+                "type": "document",
+                "title": "Introduction to Python",
+                "duration": "10 min.",
+                "file_url": "Python_Data_Science_AI/Unit_1/prueva_en.ipynb",
+                "number": 2
+            },
+            {
+                "lesson_id": "lesson-3",
+                "type": "video",
+                "title": "Python From Scratch - Level 1",
+                "duration": "30 min.",
+                "video_url": "https://youtu.be/-UyR33j-w18",
+                "number": 3
+            }
+        ],
+        "Unit 2": [
+            {
+                "unit_name": "Python Fundamentals"
+            },
+            {
+                "lesson_id": "lesson-4",
+                "type": "document",
+                "title": "Operators in Python",
+                "duration": "20 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/Mi_primer_clase_python_en.ipynb",
+                "number": 4
+            },
+            {
+                "lesson_id": "lesson-5",
+                "type": "video",
+                "title": "Operators in Python",
+                "duration": "40 min.",
+                "video_url": "https://drive.google.com/file/d/1yWaqB4qpX0VFiOEJCHK8JcQdr7uEpXsE/view?usp=sharing",
+                "number": 5
+            },
+            {
+                "lesson_id": "lesson-6",
+                "type": "video",
+                "title": "Data Types in Python",
+                "duration": "50 min.",
+                "video_url": "https://drive.google.com/file/d/1f_qVQ9MpgCYh90ComHzEmKwjl8qVGeeo/view?usp=sharing",
+                "number": 6
+            },
+            {
+                "lesson_id": "lesson-7",
+                "type": "video",
+                "title": "Loops and Conditionals",
+                "duration": "50 min.",
+                "video_url": "https://drive.google.com/file/d/1HjykVMswL4y7x7PXbxYmmg9w3IMzEsWz/view?usp=sharing",
+                "number": 7
+            },
+            {
+                "lesson_id": "lesson-8",
+                "type": "document",
+                "title": "Functions in Python",
+                "duration": "20 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/Introduccion_a_funciones_en.ipynb",
+                "number": 8
+            },
+            {
+                "lesson_id": "lesson-9",
+                "type": "video",
+                "title": "Functions in Python",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1Wfc_lkYfZhzv0ekpXO3U1QSn2uARcWJw/view?usp=sharing",
+                "number": 9
+            },
+            {
+                "lesson_id": "lesson-10",
+                "type": "document",
+                "title": "Object-Oriented Programming",
+                "duration": "15 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/Programacion_orientada_objetos_en.ipynb",
+                "number": 10
+            },
+            {
+                "lesson_id": "lesson-11",
+                "type": "video",
+                "title": "Object-Oriented Programming",
+                "duration": "50 min.",
+                "video_url": "https://drive.google.com/file/d/1BXzJBM2CpiXAJuCitZneGKbtOwTPcuN9/view?usp=drivesdk",
+                "number": 11
+            }
+        ],
+        "Unit 3": [
+            {
+                "unit_name": "Data Science and Machine Learning"
+            },
+            {
+                "lesson_id": "lesson-12",
+                "type": "document",
+                "title": "Introduction to Pandas",
+                "duration": "40 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/Introduccion_a_pandas_en.ipynb",
+                "number": 12
+            },
+            {
+                "lesson_id": "lesson-13",
+                "type": "video",
+                "title": "Introduction to Pandas",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1u6trG3lNnUfb8bCnGP5O9e4Y8dG5jwBF/view?usp=drivesdk",
+                "number": 13
+            },
+            {
+                "lesson_id": "lesson-14",
+                "type": "document",
+                "title": "Web Scraping and Bots",
+                "duration": "15 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/Web_Scraping_en.ipynb",
+                "number": 14
+            },
+            {
+                "lesson_id": "lesson-15",
+                "type": "video",
+                "title": "Web Scraping and Bots",
+                "duration": "45 min.",
+                "video_url": "https://www.youtube.com/watch?v=4ayJb90CWRU",
+                "number": 15
+            },
+            {
+                "lesson_id": "lesson-16",
+                "type": "document",
+                "title": "Final Project 1: Bots",
+                "duration": "20 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/notebook_en_en.ipynb",
+                "comment": "Archivo mapeado a notebook_en_en.ipynb, ya que 'Copia de Final Project Bots_en.ipynb' no fue encontrado.",
+                "number": 16
+            },
+            {
+                "lesson_id": "lesson-17",
+                "type": "video",
+                "title": "Web Scraping Bot with Python",
+                "duration": "30 min.",
+                "video_url": "https://www.youtube.com/watch?v=Mv5gWb-F_do",
+                "number": 17
+            },
+            {
+                "lesson_id": "lesson-18",
+                "type": "video",
+                "title": "Introduction to Machine Learning",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/113LawroSRHQhz-5HbjCIgzKsamm3SqIS/view?usp=sharing",
+                "number": 18
+            },
+            {
+                "lesson_id": "lesson-19",
+                "type": "document",
+                "title": "K-Nearest Neighbors",
+                "duration": "30 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/KNN_con_iris_en.ipynb",
+                "number": 19
+            },
+            {
+                "lesson_id": "lesson-20",
+                "type": "video",
+                "title": "K-Nearest Neighbors",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1xAsVSHz7pnp6MCBe-Zs0xwnk5EXJQObx/view?usp=sharing",
+                "number": 20
+            },
+            {
+                "lesson_id": "lesson-21",
+                "type": "document",
+                "title": "Logistic Regression and Evaluation Metrics",
+                "duration": "20 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/Mnist_Dataset_en.ipynb",
+                "number": 21
+            },
+            {
+                "lesson_id": "lesson-22",
+                "type": "video",
+                "title": "Logistic Regression",
+                "duration": "1 hour",
+                "video_url": "https://drive.google.com/file/d/1xbu1GilARFjgJNQB95fyBgzgObQ1ErcG/view?usp=sharing",
+                "number": 22
+            },
+            {
+                "lesson_id": "lesson-23",
+                "type": "document",
+                "title": "Automating Financial Reports with OpenAI",
+                "duration": "20 min.",
+                "file_url": "Python_Data_Science_AI/Unit_2/Automatización_Reportes_Financieros_en.ipynb",
+                "number": 23
+            },
+            {
+                "lesson_id": "lesson-24",
+                "type": "video",
+                "title": "Automating Financial Reports",
+                "duration": "50 min.",
+                "video_url": "https://drive.google.com/file/d/1O_jbf4oH42uN3Mx8KbEzNdj0gSVlsyz7/view?usp=sharing",
+                "number": 24
+            }
+        ]
+    }
+}
