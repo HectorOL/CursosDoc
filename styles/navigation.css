@@ -1,0 +1,130 @@
+/* ===== Transiciones de navegación entre páginas ===== */
+
+/* Transición de entrada para páginas */
+body {
+  animation: pageEnter 0.5s ease-out;
+}
+
+@keyframes pageEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Transición suave para el contenido principal */
+main {
+  transition: all 0.4s ease-in-out;
+}
+
+/* Transiciones para secciones */
+section {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Transiciones para elementos de navegación */
+.nav-links li {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li:hover {
+  transform: translateX(5px);
+}
+
+.nav-links a {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Transiciones para el logo */
+.logo {
+  transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Transiciones para el modo oscuro */
+.dark-mode-toggle {
+  transition: all 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Transiciones para el menú móvil */
+.menu-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Transiciones para tarjetas y contenido */
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Transiciones para texto */
+h1, h2, h3, h4, h5, h6 {
+  transition: color 0.3s ease-in-out;
+}
+
+p {
+  transition: color 0.3s ease-in-out;
+}
+
+/* Transiciones para iconos */
+i {
+  transition: all 0.3s ease-in-out;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
+
+/* Transiciones para enlaces */
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  transform: translateY(-1px);
+}
+
+/* Transiciones para botones */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

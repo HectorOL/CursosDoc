@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/animate.min.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
     <link rel="stylesheet" href="../styles/about.css">
     <script src="../js/dark.js" defer></script>
     <title>About me</title>
@@ -67,7 +68,7 @@
             <p class="section-abstract">Core competencies in data science, machine learning, and software developmen.</p>
         </section>
         <section class="skills">
-            <div class="skill wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+            <div class="skill wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
                 <i class="fas fa-code"></i>
                 <h3>Programming & Data Analysis </h3>
                 <ul>
@@ -79,24 +80,24 @@
                     <li>Scikit-learn</li>
                     <li>Yfinance</li>
                 </ul>
-                <div class="image-container wow animate__animated animate__fadeInRight" data-wow-delay="0.6s">
+                <div class="image-container">
                     <div class="image-wrapper">&nbsp;</div>
                     <img src="/img/skill1.jpg" alt="Programming Languages" class="skill-img">
                 </div>
             </div>
-            <div class="skill wow animate__animated animate__fadeInLeft" data-wow-delay="0.8s">
+            <div class="skill wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                 <i class="fas fa-laptop-code"></i>
                 <h3>Machine Learning & Deep Learning</h3>
                 <ul>
                     <li>TensorFlow</li>
                     <li>PyTorch</li>
                 </ul>
-                <div class="image-container wow animate__animated animate__fadeInRight" data-wow-delay="1.2s">
+                <div class="image-container">
                     <div class="image-wrapper">&nbsp;</div>
                     <img src="/img/skill2.jpg" alt="Programming Languages" class="skill-img">
                 </div>
             </div>
-            <div class="skill wow animate__animated animate__fadeInLeft" data-wow-delay="1.4s">
+            <div class="skill wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
                 <i class="fas fa-database"></i>
                 <h3>Cloud, Version Control & APIs</h3>
                 <ul>
@@ -104,7 +105,7 @@
                     <li>Git</li>
                     <li>OpenAI APIs</li>
                 </ul>
-                <div class="image-container wow animate__animated animate__fadeInRight" data-wow-delay="1.8s">
+                <div class="image-container">
                     <div class="image-wrapper">&nbsp;</div>
                     <img src="/img/skill3.jpg" alt="Programming Languages" class="skill-img">
                 </div>
@@ -114,11 +115,14 @@
     <script src="../assets/js/wow.min.js"></script>
     <script>
         new WOW({
-            duration: 2.0,
-            delay: 0.1
+            duration: 1.5,
+            delay: 0.1,
+            offset: 50,
+            easing: 'ease-in-out'
         }).init();
     </script>
     <script src="../js/common.js"></script>
+    <script src="../js/transition.js"></script>
 </body>
 
 </html>

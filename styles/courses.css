@@ -93,6 +93,39 @@ main{
 
 
 
+/* ===== Dark Mode Styles ===== */
+.dark .course {
+    background-color: var(--card-color);
+    border-color: var(--border);
+    color: var(--text);
+}
+
+.dark .course h2 {
+    color: var(--text);
+}
+
+.dark .course p {
+    color: var(--secondary-text);
+}
+
+.dark .level {
+    background-color: #00A158;
+    color: white;
+}
+
+.dark .number-classes {
+    color: var(--secondary-text);
+}
+
+.dark .course a {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.dark .course a:hover {
+    background-color: #2c5aa0;
+}
+
 @media screen and (max-width: 1000px) {
     main {
         padding: 20px 7%;
