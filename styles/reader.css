@@ -1,3 +1,41 @@
+.reader-container {
+    /* Más espacio arriba, menos a los lados y con padding inferior para que no se vea cortado */
+    padding: 28px 9% 20px;
+}
+
+.md-content {
+    margin-top: 8px;
+    padding-bottom: 16px; /* respiro al final del documento */
+}
+
+/* Enlace de regreso similar a courseU.css */
+.go-back-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: var(--font-abstract-size);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: color 0.2s;
+}
+.go-back-link i { transition: transform 0.3s; }
+.go-back-link:hover { color: var(--secondary-color); }
+.go-back-link:hover i { transform: translateX(-6px); }
+
+.go-back { margin-bottom: 2rem; }
+
+/* Evitar que contenido ancho rompa el layout */
+.md-content { width: 100%; overflow: visible; }
+.md-content img { max-width: 100%; height: auto; }
+.nb-output table { max-width: 100%; display: block; overflow-x: auto; }
+.nb-output pre, .nb-source pre { overflow-x: auto; }
+.nb-output, .nb-source { box-sizing: border-box; }
+
+@media (max-width:768px) {
+    .reader-container { padding: 18px 6% 16px; }
+    .go-back { margin-bottom: 2rem; }
+}
 .nb-notebook {
     line-height: 1.5
 }

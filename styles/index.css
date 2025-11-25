@@ -1,15 +1,15 @@
 body{
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Prevenir scroll durante la carga */
 body {
-    overflow: hidden !important;
+    overflow-y: auto !important;
 }
 
 /* Asegurar que no aparezca scroll en ningún momento */
@@ -242,7 +242,8 @@ html {
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column-reverse;
-        padding: 20px 10%;
+        gap: 20px;
+        padding: 24px 10%;
         height: auto;
     }
 
@@ -253,20 +254,39 @@ html {
     }
 
     .info {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
     }
+
+    .info-title { margin-top: 8px; }
+    .info-description { margin-bottom: 24px; line-height: 1.5; }
 
     .personal-image img {
-        width: 50%;
+        width: 55%;
     }
 
+    /* Ocultar burbujas decorativas en móvil para limpiar el layout */
+    .bubble { display: none; }
+
     .buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        gap: 14px;
+    }
+
+    .buttons a {
+        width: 100%;
+        max-width: 480px;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 14px 28px;
     }
 
     .social-networks {
-        width: 60%;
-        margin: 20px auto 0;
-        justify-content: space-around;
+        width: 100%;
+        margin: 32px auto 0;
+        justify-content: center;
+        gap: 32px;
     }
 }

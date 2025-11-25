@@ -6,11 +6,13 @@ const getNotebook = async (url) => {
     const notebook = await response.json()
     return notebook
 }
+
 let notebookUrl =  "../documents/" + fileUrl
-const notebook = getNotebook(notebookUrl).then((data) => {
-    console.log(data)
+
+getNotebook(notebookUrl).then((data) => {
     const element = ipynb2html.render(data)
-    document.body.appendChild(element)
+    const container = document.getElementById('md-inner') || document.getElementById('content') || document.body
+    container.appendChild(element)
 })
 
 console.log("Script loaded")

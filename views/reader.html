@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/reader.css">
     <meta charset="utf-8">
@@ -10,11 +11,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.3/build/styles/default.min.css" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/ipynb2html@0.4.0-rc.1/dist/ipynb2html-full.min.js" crossorigin="anonymous"></script>
-  </head>
     <title>Reader</title>
-</head>
+  </head>
 <body>
-    <div id="content"></div>
+    <main class="reader-container">
+        <div id="content" class="md-content">
+            <div class="go-back">
+                <a href="javascript:history.back()" class="go-back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                </a>
+            </div>
+            <div id="md-inner"></div>
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
     <script src="../js/markdown-viewer.js"></script>
     <script src="../js/common.js"></script>

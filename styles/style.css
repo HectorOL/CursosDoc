@@ -166,6 +166,9 @@ header {
   border-bottom: 2px solid var(--border);
   background-color: var(--background);
   color: var(--text);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 header a {
@@ -362,8 +365,9 @@ main {
     z-index: 3;
     position: absolute;
     top: 80px;
-    left: -15%;
-    width: 130%;
+    left: 0;
+    right: 0;
+    width: 100%;
     background-color: var(--background);
     align-items: center;
     gap: 20px;
@@ -372,7 +376,31 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    display: none;
+    /* Animación suave */
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, max-height 0.3s ease;
+    will-change: opacity, max-height;
+  }
+
+  /* Estado abierto del menú móvil */
+  .nav-links.menu-active {
+    visibility: visible;
+    opacity: 1;
+    max-height: 500px; /* suficientemente grande para el contenido */
+    pointer-events: auto;
+  }
+
+  /* Evitar transiciones internas que causen desfase de íconos/textos */
+  .nav-links *,
+  .nav-links li,
+  .nav-links a,
+  .nav-links i {
+    transition: none !important;
   }
   .nav-links li{
     min-width: 100px;

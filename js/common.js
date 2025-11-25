@@ -1,8 +1,25 @@
 const menuIcon = document.getElementById("menu-icon");
 const navLinks = document.querySelector(".nav-links");
+const headerEl = document.querySelector('header');
+
+const updateHeaderSpacing = () => {
+    const isMobile = window.innerWidth <= 1000;
+    const isOpen = navLinks.classList.contains('menu-active');
+    if (isMobile && isOpen) {
+        // Esperar al reflow para medir la altura del dropdown visible
+        requestAnimationFrame(() => {
+            const h = navLinks.offsetHeight || 0;
+            headerEl.style.marginBottom = h + 'px';
+        });
+    } else {
+        headerEl.style.marginBottom = '0px';
+    }
+};
+
 menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle("menu-active");
     showIcons();
+    updateHeaderSpacing();
 });
 
 const showIcons = () => {
@@ -18,11 +35,15 @@ window.addEventListener("resize", () => {
         icons.forEach(icon => {
             icon.style.display = "none";
         });
+        // Cerrar menú y limpiar espaciado si se pasa a desktop
+        navLinks.classList.remove('menu-active');
+        headerEl.style.marginBottom = '0px';
     } else {
         icons.forEach(icon => {
             icon.style.display = "inline-block";
         });
     }
+    updateHeaderSpacing();
 });
 
 // Efectos hover con animate.css
@@ -73,4 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1)';
         });
     }
+
+    updateHeaderSpacing();
 });
