@@ -2,7 +2,7 @@ const coursesDiv = document.getElementById('courses-container');
 coursesDiv.innerHTML = '';
 
 const getCourses = async () => {
-    const response = await fetch('/dictionary/courses-list.json');
+    const response = await fetch('dictionary/courses-list.json');
     const courses = await response.json();
     return courses;
 }
