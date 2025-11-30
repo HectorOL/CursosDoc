@@ -194,6 +194,16 @@ main{
     width: auto;
     align-self: flex-start;
     padding: 1% 5%;
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+    background-color: #fff;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.education-button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 .languajes-title {
