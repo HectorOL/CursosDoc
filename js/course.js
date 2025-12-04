@@ -3,7 +3,7 @@ const courseId = urlParams.get('id');
 const mainContent = document.getElementById('course-container');
 
 const getCourseData = async (id) => {
-    const response = await fetch(`/dictionary/${id}.json`);
+    const response = await fetch(`../dictionary/${id}.json`);
     const courseData = await response.json();
     return courseData;
 }
